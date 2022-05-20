@@ -1,0 +1,24 @@
+{
+  "name": "api-global",
+  "version": "1.0.0",
+  "description": "Api criada para o desafio da global",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./",
+    "build": "tsc -p .",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
+  },
+  "author": "Raione Nascimento",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.34",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "http-status-codes": "^2.2.0"
+  }
+}
