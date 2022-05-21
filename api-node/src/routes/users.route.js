@@ -21,26 +21,42 @@ function verifyJWT(req, res, next) {
 }
 
 usersRoute.post('/login', (req, res) => {
-  if(req.body.email === 'raione@hotmail.com' && req.body.password === 'admin') {
+  if(req.body.email === 'usarioadm@teste.com.br' && req.body.password === 'admin') {
     const token = jwt.sign({ uuid: 1 }, SECRET, { expiresIn: 500 });
     return res.json({ 
-      user: 'raione',
+      user: 'usarioadm',
       email: req.body.email,
       nivel_acesso: 'admin',
       auth: true, 
       token })
-  }
+  } else if(req.body.email === 'usuariocomum@teste.com.br' && req.body.password === 'user') {
+    const token = jwt.sign({ uuid: 2 }, SECRET, { expiresIn: 500 });
+    return res.json({ 
+      user: 'usuariocomum',
+      email: req.body.email,
+      nivel_acesso: 'user',
+      auth: true, 
+      token })
+  } 
 
   res.sendStatus(401).end();
 })
 
 usersRoute.get('/users', verifyJWT, (req, res) => {
-  res.json([{
-    user_name: 'Raione Nascimento', 
-    user_email: 'raione_bonfim@hotmail.com', 
-    nivel_acesso: 'admin', 
-    uuid: 1
-  }]);
+  res.json([
+    {
+      user_name: 'usarioadm', 
+      user_email: 'usarioadm@teste.com.br', 
+      nivel_acesso: 'admin', 
+      uuid: 1
+    },
+    {
+      user_name: 'usuariocomum', 
+      user_email: 'usuariocomum@teste.com.br', 
+      nivel_acesso: 'user', 
+      uuid: 2
+    }
+  ]);
 });
 
 usersRoute.get('/users/:uuid', (req, res) => {
