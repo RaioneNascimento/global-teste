@@ -1,0 +1,18 @@
+.container-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.container-checkbox label {
+  margin: 0;
+}
+
+.container-checkbox input {
+  width: 14px;
+  height: 14px;
+}
+
+.container-checkbox input:checked{
+  width: 14px;
+  height: 14px;
+}

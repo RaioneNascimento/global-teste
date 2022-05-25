@@ -31,3 +31,13 @@ a:link {
     font-size: 14px;
     margin: 0;
 }
+
+.btn-primary {
+    background: #e50404;
+    border-color:#e50404;
+}
+
+.btn-primary:hover {
+    background: #c70505;
+    border-color:#c70505;
+}

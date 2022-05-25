@@ -176,7 +176,7 @@ class UserEditPage extends React.Component {
                             value={this.state.email}
                             onChange={e => this.setState({ email: e.target.value })} />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group container-checkbox">
                         <label htmlFor="auth">Usuário admin?</label>
                         <input
                             type="checkbox"

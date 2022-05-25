@@ -53,7 +53,7 @@ class UserListPage extends React.Component {
             <div className="container">
 
                 <PageTop title={"Users"} desc={"Lista de usuários"}>
-                    <button className="btn btn-primary" onClick={() => this.props.history.push('/user-add')}>
+                    <button className="btn btn-primary"onClick={() => this.props.history.push('/user-add')}>
                         Adicionar
                     </button>
                 </PageTop>

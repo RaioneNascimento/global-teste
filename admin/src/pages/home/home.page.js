@@ -93,8 +93,6 @@ function HomePage() {
     },[]);
     memoryArray.splice(0, 0, ['Hora', 'Valor'])
 
-
-    console.log(cluster)
     return (
         <>
             {redirectTo ? <Redirect to={redirectTo}/> : ''}

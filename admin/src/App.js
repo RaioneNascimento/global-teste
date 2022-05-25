@@ -8,6 +8,7 @@ import UserListPage from './pages/user-list/user-list.page';
 import UserDetailPage from './pages/user-detail/user-detail.page';
 import UserEditPage from './pages/user-edit/user-edit.page';
 import authService from './services/auth.service';
+import LogoHeader from './assets/logo/global_logo.png';
 
 class App extends React.Component {
 
@@ -41,7 +42,9 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         {isLogged ? <nav className="navbar navbar-expand-lg navbar-light bg-light">
-           <Link to="/" className="navbar-brand">SPA Admin</Link>
+          <Link to="/" className="navbar-brand">
+            <img src={LogoHeader} width="110" alt="logo global tecnologia do header" />
+          </Link>
           <button className="navbar-toggler"
             type="button"
             data-toggle="collapse"

@@ -2,6 +2,7 @@ import React from "react";
 import authService from "../../services/auth.service";
 import './login.page.css';
 import Swal from "sweetalert2";
+import Logo from '../../assets/logo/global_logo.png';
 
 class Login extends React.Component {
   constructor(props) {
@@ -69,6 +70,9 @@ class Login extends React.Component {
       <div className="container conteiner-login">
         <div className="card">
           <div className="card-body">
+            <div className="card-logo">
+              <img src={Logo} alt="Logo da global tecnologia" />
+            </div>
             <form onSubmit={(e) => this.sendLogin(e)}>
               <div className="form-group">
                 <label htmlFor="email">E-mail</label>
