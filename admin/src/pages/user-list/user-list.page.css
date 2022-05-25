@@ -1,0 +1,33 @@
+a:link {
+    text-decoration: none;
+    color: unset
+}
+
+.user-card{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    padding: 12px;
+}
+
+.user-card__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-card__text h4{
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+  
+.user-card__text p{
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
