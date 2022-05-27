@@ -183,8 +183,8 @@ class UserEditPage extends React.Component {
                             id="auth"
                             style={{ marginLeft: '12px' }}
                             value={this.state.auth}
-                            checked={this.state.auth === "admin"}
-                            onChange={e => this.setState({ auth: e.target.checked ? 'admin' : 'user'})} />
+                            checked={this.state.auth === "adm"}
+                            onChange={e => this.setState({ auth: e.target.checked ? 'adm' : 'user'})} />
                     </div>
                 </form>
             </div>
