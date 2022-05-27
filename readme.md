@@ -6,6 +6,7 @@ FRONT:
 
 Acesso ao sistema:
   -  Quando a api for iniciada, será criado um banco de dados em SQLite com os usuários mocados:
+  -  Link do website em deploy: https://global-seven.vercel.app/login
     
     - user: usarioadm@teste.com.br
       senha: admin
